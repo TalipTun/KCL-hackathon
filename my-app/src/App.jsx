@@ -28,6 +28,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div className="container text-center">
+        <h1 className="text-primary">Hello, Bootstrap in React!</h1>
+        <button className="btn btn-success">Click Me</button>
+      </div>
     </>
   )
 }
