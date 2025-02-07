@@ -1,6 +1,6 @@
 // src/pages/Shop.jsx
 
-import './test.css';
+import '../styling/test.css';
 
 import React from "react";
 import barley from "../pictures/barley.png";
