@@ -1,57 +1,68 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Add this import
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
+import Login from "./Login";
+import SignUp from "./SignUp";
 
 const Navbar = () => {
-  return (
-    <nav className="bg-gray-800 p-4 flex justify-between items-center">
-      <ul className="flex space-x-0">
-        <li>
-        <Link to="/home">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                homebutton
-            </button>
-        </Link>
-        </li>
-        <li>
-        <Link to="/calculator">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                calculatorbutton
-            </button>
-        </Link>
-        </li>
-        <li>
-        <Link to="/shoppingPage">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                shopButton
-            </button>
-        </Link>
-        </li>
-      </ul>
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
-      <ul className="flex space-x-0">
-        <li>
-        <Link to="/signup">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                signupbutton
+  const openLogin = () => {
+    setIsLoginOpen(true);
+    setIsSignUpOpen(false); // Close SignUp if open
+  };
+
+  const openSignUp = () => {
+    setIsSignUpOpen(true);
+    setIsLoginOpen(false); // Close Login if open
+  };
+
+  const closeModals = () => {
+    setIsLoginOpen(false);
+    setIsSignUpOpen(false);
+  };
+
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <div className="navbar-collapse show" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li className="nav-item" to="/home">
+                <Link className="navbar-brand d-flex align-items-center" to="/home">AgriTrack</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link active" to="/home">Home</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/shoppingPage">Shop</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/calculator">Calculator</Link>
+            </li>
+            </ul>
+            <button
+              className="btn btn-outline-primary me-2"
+              type="button"
+              onClick={openLogin}
+            >
+              Login
             </button>
-        </Link>
-        </li>
-        <li>
-        <Link to="/cart">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                cartbutton
+            <button
+              className="btn btn-primary"
+              type="button"
+              onClick={openSignUp}
+            >
+              Sign Up
             </button>
-        </Link>
-        </li>
-        <li>
-        <Link to="/favourites">
-            <button className="flex items-center text-white px-4 py-2 rounded-full hover:bg-gray-700 transition-all duration-300">
-                favouritesbutton
-            </button>
-        </Link>
-        </li>
-      </ul>
-    </nav>
+          </div>
+        </div>
+      </nav>
+
+      {/* Login and SignUp Modals */}
+      <Login isOpen={isLoginOpen} onClose={closeModals} />
+      <SignUp isOpen={isSignUpOpen} onClose={closeModals} />
+    </>
   );
 };
 

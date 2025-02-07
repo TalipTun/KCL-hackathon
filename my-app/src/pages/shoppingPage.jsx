@@ -4,7 +4,7 @@ import ShoppingItems from "../components/shopping-page"
 function ShoppingPage() {
   return (
     <>
-      <div className='bg-green-200 min-h-screen w-screen'>
+      <div className='min-h-screen w-screen'>
         <Navbar />
         <ShoppingItems />
         <Footer />

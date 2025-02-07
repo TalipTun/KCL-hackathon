@@ -1,0 +1,56 @@
+/* CSS for the Add To Cart Button */
+
+.container h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.add-to-cart-button {
+    background-color: rgb(56, 97, 251);
+    color: white;
+    font-size: 0.700rem; /* Smaller font size */
+    padding: 8px 12px; /* Smaller padding */
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: rgb(31, 78, 250);
+  }
+  
+  .add-to-cart-button svg {
+    margin-right: 8px;
+  }
+  
+  /* Product Grid Styling */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image img {
+    max-height: 200px; /* Limit image height */
+    object-fit: cover; /* Ensure image covers the container without distortion */
+  }
+  
+  .product-content h3 {
+    margin-top: 12px;
+    font-size: 1.1rem;
+  }
+  
+  .product-content div {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #555;
+  }
