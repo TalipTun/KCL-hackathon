@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Talip Tun.github.io/KCL-hackathon/my-app",
+  "homepage": "https://Talip Tun.github.io/KCL-hackathon",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
