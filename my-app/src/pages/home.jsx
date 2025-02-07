@@ -4,7 +4,7 @@ import WeatherForecast from "../components/weather";
 
 function Home() {
   return (
-    <div className="bg-green-200 min-h-screen w-screen flex flex-col">
+    <div className=" min-h-screen w-screen flex flex-col">
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center text-center p-6">
         <h1 className="text-4xl font-bold text-green-900">Welcome to Our Sustainable Marketplace</h1>
