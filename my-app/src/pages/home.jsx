@@ -13,6 +13,7 @@ function Home() {
         </p>
         <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700 transition">
           Explore Our Products
+          {/* test   */}
         </button>
         
         <div className="mt-10 w-full max-w-4xl">
