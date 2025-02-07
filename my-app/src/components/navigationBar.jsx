@@ -40,6 +40,9 @@ const Navbar = () => {
             <li className="nav-item">
                 <Link className="nav-link" to="/calculator">Calculator</Link>
             </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/weather-condition">Weather Forecast</Link>
+            </li>
             </ul>
             <button
               className="btn btn-outline-primary me-2"
