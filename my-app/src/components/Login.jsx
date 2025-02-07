@@ -19,7 +19,26 @@ const Login = ({ isOpen, onClose }) => {
   return (
     <div className="loginOverlay">
       <div className="loginContainer">
-        <div className="login-box">
+        <div className="login-box" style={{ position: "relative" }}>
+          <button
+            className="closeIcon"
+            onClick={onClose}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              width: "20px",
+              height: "20px",
+              color: "red",
+              fontSize: "20px",
+              background: "none",
+              border: "none",
+              marginTop: "-10px",
+              marginRight: "10px"
+            }}
+          >
+            ×
+          </button>
           <h2>Login</h2>
           <form onSubmit={handleLogin}>
             <input

@@ -22,7 +22,26 @@ const SignUp = ({ isOpen, onClose }) => {
   return (
     <div className="loginOverlay">
       <div className="loginContainer">
-        <div className="login-box">
+        <div className="login-box" style={{ position: "relative" }}>
+          <button
+            className="closeIcon"
+            onClick={onClose}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              width: "30px", // Adjust width
+              height: "30px", // Adjust height
+              color: "red",
+              fontSize: "24px", // Increase font size
+              background: "none",
+              border: "none",
+              marginTop: "-10px",
+              marginRight: "5px"
+            }}
+          >
+            ×
+          </button>
           <h2>Sign Up</h2>
           <form onSubmit={handleSignUp}>
             <input
