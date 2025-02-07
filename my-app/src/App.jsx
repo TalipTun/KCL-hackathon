@@ -7,6 +7,9 @@ import Cart from "./pages/cart"
 import Calculator from "./pages/calculator"
 import Favourites from './pages/favourites';
 import ShoppingPage from "./pages/shoppingPage"
+import WeatherPage from "./pages/weatherPage";
+import DiseaseDetector from "./pages/diseasedetector";
+
 function App() {
   return (
     <>
@@ -17,6 +20,8 @@ function App() {
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/shoppingPage" element={<ShoppingPage />} />
+          <Route path="/weather-condition" element={<WeatherPage />} />
+          <Route path="/disease-detector" element={<DiseaseDetector />} />
         </Routes>
     </Router>
   </>
