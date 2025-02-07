@@ -55,9 +55,33 @@ const Login = ({ isOpen, onClose }) => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button type="submit">Login</button>
+            <button
+              type="submit"
+              style={{
+                backgroundColor: "rgba(26, 155, 72, 1)", 
+                color: "white",
+                padding: "12px 20px",
+                borderRadius: "5px",
+                cursor: "pointer",
+                border: "none",
+                marginTop: "10px"
+              }}
+            >
+              Login
+            </button>
           </form>
-          <button className="closeButton" onClick={onClose} style={{ marginTop: "10px" }}>
+          <button
+            onClick={onClose}
+            style={{
+              backgroundColor: "rgba(34, 197, 94, 1)", 
+              color: "white",
+              padding: "12px 20px",
+              borderRadius: "5px",
+              cursor: "pointer",
+              border: "none",
+              marginTop: "10px"
+            }}
+          >
             Close
           </button>
           <hr />
