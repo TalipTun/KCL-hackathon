@@ -65,9 +65,9 @@ const SignUp = ({ isOpen, onClose }) => {
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
-            <button type="submit">Sign Up</button>
+            <button type="submit" style={{backgroundColor: "rgba(26, 155, 72, 1)"}}>Sign Up</button>
           </form>
-          <button className="closeButton" onClick={onClose} style={{ marginTop: "10px" }}>
+          <button className="closeButton" onClick={onClose} style={{ marginTop: "10px", backgroundColor: "rgba(34, 197, 94, 1)" }}>
             Close
           </button>
           <hr />
