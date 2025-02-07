@@ -2,6 +2,7 @@ import Navbar from "../components/navigationBar";
 import Footer from "../components/footer";
 import AgriTrack from "../pictures/AgriTrack.jpg"; // Importing image
 import WeatherForecast from "../components/weather";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
             Discover eco-friendly and sustainable crops that contribute to a healthier planet. Shop with us and be part of the change!
           </p>
           <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700 transition">
-            Explore Our Products
+            <Link to="/shoppingPage">Explore Our Products</Link>
           </button>
         </div>
       </main>
