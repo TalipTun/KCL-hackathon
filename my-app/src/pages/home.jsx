@@ -21,7 +21,6 @@ function Home() {
           </Link>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
