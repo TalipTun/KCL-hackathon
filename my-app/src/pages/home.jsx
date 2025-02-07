@@ -14,11 +14,14 @@ function Home() {
           <p className="text-lg text-white mt-4 max-w-2xl">
             Discover eco-friendly and sustainable crops that contribute to a healthier planet. Shop with us and be part of the change!
           </p>
-          <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700 transition">
-            <Link to="/shoppingPage">Explore Our Products</Link>
-          </button>
+          <Link to="/shoppingPage">
+            <button className="mt-6 px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700 transition">
+              Explore Our Products
+            </button>
+          </Link>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
