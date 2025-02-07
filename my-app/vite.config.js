@@ -9,5 +9,5 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
-  base: '/'
+  base: '/home'
 })
