@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link className="nav-link text-white" to="/calculator">Soil Calculator</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/disease-detector">Disease Detector</Link>
+                <Link className="nav-link text-white" to="/disease-detector">Disease Identifier</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/weather-condition">Weather Forecast</Link>

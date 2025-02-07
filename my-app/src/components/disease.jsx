@@ -53,7 +53,7 @@ const DiseaseCalculator = () => {
 
     return (
         <div className="disease-calculator">
-            <h1>Plant Disease Calculator</h1>
+            <h1>Plant Disease Identifier</h1>
             <input
                 type="text"
                 value={symptoms}
