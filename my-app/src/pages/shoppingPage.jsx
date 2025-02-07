@@ -1,15 +1,16 @@
 import Navbar from "../components/navigationBar"
 import Footer from "../components/footer"
-function Home() {
+import ShoppingItems from "../components/shopping-page"
+function ShoppingPage() {
   return (
     <>
       <div className='bg-green-200 min-h-screen w-screen'>
         <Navbar />
-        <h1>hi you'rea at home page</h1>
+        <ShoppingItems />
         <Footer />
       </div>
     </>
   )
 }
 
-export default Home
+export default ShoppingPage

@@ -4,7 +4,7 @@ function Favourites() {
   return (
     <>
       <Navbar/>
-      <p>hiiiiii</p>
+      <p>favouritespage</p>
     </>
   )
 }

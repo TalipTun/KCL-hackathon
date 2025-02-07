@@ -27,7 +27,7 @@ const products = [
     { name: "what", originalPrice: 10, img1: wheat },
 ];
 
-const ShoppingPage = () => {
+const ShoppingItems = () => {
     return (
         <div className="container w-screen ">
             <div className="row flex justify-center flex-wrap">
@@ -62,4 +62,4 @@ const ShoppingPage = () => {
     );
 };
 
-export default ShoppingPage;
+export default ShoppingItems;

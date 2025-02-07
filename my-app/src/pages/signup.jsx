@@ -4,7 +4,7 @@ function SignUp() {
   return (
     <>
       <Navbar/>
-      <p>hiiiiii</p>
+      <p>signuppage</p>
     </>
   )
 }
