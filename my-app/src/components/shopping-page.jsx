@@ -1,5 +1,3 @@
-// src/pages/Shop.jsx
-
 import '../styling/test.css';
 
 import React from "react";
@@ -16,67 +14,39 @@ import sunflower from "../pictures/sunflower.jpg";
 import tomato from "../pictures/tomato.jpg";
 import wheat from "../pictures/wheat.png";
 
-// Product data
 const products = [
-  { name: "barley", originalPrice: 20, img1: barley },
-  { name: "cabbage", originalPrice: 10, img1: cabbage },
-  { name: "corn", originalPrice: 10, img1: corn },
-  { name: "cotton", originalPrice: 10, img1: cotton },
-  { name: "oat", originalPrice: 20, img1: oat },
-  { name: "potato", originalPrice: 10, img1: potato },
-  { name: "rice", originalPrice: 10, img1: rice },
-  { name: "soybeans", originalPrice: 10, img1: soybeans },
-  { name: "sugercane", originalPrice: 20, img1: sugercane },
-  { name: "sunflower", originalPrice: 10, img1: sunflower },
-  { name: "tomato", originalPrice: 10, img1: tomato },
-  { name: "wheat", originalPrice: 10, img1: wheat },
+  { name: "barley", originalPrice: 20, img1: barley, benefit: "Used for biofuel, reducing carbon footprint." },
+  { name: "cabbage", originalPrice: 10, img1: cabbage, benefit: "Improves soil health and requires minimal pesticides." },
+  { name: "corn", originalPrice: 10, img1: corn, benefit: "Can be used for bioethanol, a renewable energy source." },
+  { name: "cotton", originalPrice: 10, img1: cotton, benefit: "Supports sustainable textile production." },
+  { name: "oat", originalPrice: 20, img1: oat, benefit: "Enhances soil fertility and reduces erosion." },
+  { name: "potato", originalPrice: 10, img1: potato, benefit: "Low water consumption compared to other staple crops." },
+  { name: "rice", originalPrice: 10, img1: rice, benefit: "Can be cultivated using water-efficient farming methods." },
+  { name: "soybeans", originalPrice: 10, img1: soybeans, benefit: "Fixes nitrogen in the soil, reducing fertilizer needs." },
+  { name: "sugercane", originalPrice: 20, img1: sugercane, benefit: "A key source for biodegradable packaging and biofuels." },
+  { name: "sunflower", originalPrice: 10, img1: sunflower, benefit: "Supports pollinators and biodiversity." },
+  { name: "tomato", originalPrice: 10, img1: tomato, benefit: "Grows efficiently with minimal environmental impact." },
+  { name: "wheat", originalPrice: 10, img1: wheat, benefit: "A resilient crop that grows in diverse climates with minimal inputs." },
 ];
 
 const ShoppingItems = () => {
   return (
     <div className="container my-5">
-
-        <h2>Shopping Items</h2>
-      {/* Product Grid - 4 images per row on large screens */}
-      <div className="row">
+      <h1 className="text-3xl font-bold text-center mb-6">Sustainable Crops for a Greener Future</h1>
+      <p className="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
+        Our crops are carefully selected to promote environmental sustainability. From reducing carbon emissions
+        to improving soil health, each crop plays a role in preserving our planet.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
-          <div
-            key={index}
-            className="col-lg-3 col-md-4 col-sm-6 mb-4" // 4 per row on large, 3 on medium, and 2 on small screens
-          >
-            <div className="product-card border rounded-lg overflow-hidden shadow-md">
-              {/* Product Image */}
-              <div className="product-image">
-                <img
-                  src={product.img1}
-                  alt={product.name}
-                  className="w-100 h-56 object-cover"
-                />
-              </div>
-
-              {/* Product Content */}
-              <div className="product-content text-center p-4">
-                <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-                <div className="text-md text-gray-600 mt-2">${product.originalPrice.toFixed(2)}</div>
-                <button className="add-to-cart-button w-full mt-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7m1.5-7L3 5m4 8h10m-7 7a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z"
-                    />
-                  </svg>
-                  Add To Cart
-                </button>
-              </div>
-            </div>
+          <div key={index} className="p-4 border rounded-lg shadow-md bg-green-100 text-center">
+            <img src={product.img1} alt={product.name} className="w-full h-40 object-cover rounded" />
+            <h3 className="text-xl font-semibold text-gray-800 mt-4">{product.name}</h3>
+            <p className="text-md text-gray-600">${product.originalPrice.toFixed(2)}</p>
+            <p className="text-sm text-gray-700 mt-2">{product.benefit}</p>
+            <button className="w-full mt-3 bg-green-500 text-white py-2 rounded hover:bg-green-600">
+              Add To Cart
+            </button>
           </div>
         ))}
       </div>
