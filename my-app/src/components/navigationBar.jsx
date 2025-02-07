@@ -38,7 +38,10 @@ const Navbar = () => {
                 <Link className="nav-link text-white" to="/shoppingPage">Shop</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/calculator">Calculator</Link>
+                <Link className="nav-link text-white" to="/calculator">Soil Calculator</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/disease-detector">Disease Detector</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/weather-condition">Weather Forecast</Link>
