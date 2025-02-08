@@ -16,12 +16,12 @@ function App() {
     <Router>
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/favourites" element={<Favourites />} />
-          <Route path="/shoppingPage" element={<ShoppingPage />} />
-          <Route path="/weather-condition" element={<WeatherPage />} />
-          <Route path="/disease-detector" element={<DiseaseDetector />} />
+          <Route path="/home/cart" element={<Cart />} />
+          <Route path="/home/calculator" element={<Calculator />} />
+          <Route path="/home/favourites" element={<Favourites />} />
+          <Route path="/home/shoppingPage" element={<ShoppingPage />} />
+          <Route path="/home/weather-condition" element={<WeatherPage />} />
+          <Route path="/home/disease-detector" element={<DiseaseDetector />} />
         </Routes>
     </Router>
   </>

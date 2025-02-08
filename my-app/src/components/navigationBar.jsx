@@ -35,16 +35,16 @@ const Navbar = () => {
                 <Link className="nav-link active text-white" to="/home">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/shoppingPage">Shop</Link>
+                <Link className="nav-link text-white" to="/home/shoppingPage">Shop</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/calculator">Soil Calculator</Link>
+                <Link className="nav-link text-white" to="/home/calculator">Soil Calculator</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/disease-detector">Disease Identifier</Link>
+                <Link className="nav-link text-white" to="/home/disease-detector">Disease Identifier</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/weather-condition">Weather Forecast</Link>
+                <Link className="nav-link text-white" to="/home/weather-condition">Weather Forecast</Link>
               </li>
             </ul>
             <button
