@@ -61,6 +61,7 @@ const Navbar = () => {
             >
               Sign Up
             </button>
+            
           </div>
         </div>
       </nav>
